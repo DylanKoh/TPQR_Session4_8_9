@@ -76,7 +76,7 @@ namespace TPQR_Session4_8_9
                                   where x.skillName == cbSkill.SelectedItem.ToString()
                                   select x.skillId).FirstOrDefault();
                 var training = (from x in context.Assign_Training
-                                where x.User.name == cbCompetitors.SelectedItem.ToString() && x.User.skillIdFK == getSkillID
+                                where x.User.name == cbCompetitors.SelectedItem.ToString() && x.User.skillIdFK == getSkillID && x.User.userTypeIdFK == 3
                                 select x).ToList();
                 if (cbProgress.SelectedItem.ToString() == "No Filter")
                 {

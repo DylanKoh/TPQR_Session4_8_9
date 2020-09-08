@@ -97,7 +97,9 @@ namespace TPQR_Session4_8_9
                         }
                         else if (findUser.userTypeIdFK == 2)
                         {
-
+                            Hide();
+                            (new ExpertMainMenu(findUser.skillIdFK)).ShowDialog();
+                            Close();
                         }
                         else
                         {
@@ -108,6 +110,20 @@ namespace TPQR_Session4_8_9
                     }
                 }
             }
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            var t = new Timer();
+            t.Interval = 500;
+            t.Enabled = true;
+            t.Tick += T_Tick;
+            t.Start();
+        }
+
+        private void T_Tick(object sender, EventArgs e)
+        {
+            lblTimer.Text = $"Left {((new DateTime(2020, 10, 1, 09, 00, 00)) - DateTime.Now).Days} Days, {((new DateTime(2020, 10, 1, 09, 00, 00)) - DateTime.Now).Hours} Hours to competition!";
         }
     }
 }

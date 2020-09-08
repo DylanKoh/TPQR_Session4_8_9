@@ -103,6 +103,12 @@
     <Compile Include="Skill.cs">
       <DependentUpon>Session4Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="TrackCompetitors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrackCompetitors.Designer.cs">
+      <DependentUpon>TrackCompetitors.cs</DependentUpon>
+    </Compile>
     <Compile Include="TrackOverall.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,12 @@
     </Compile>
     <Compile Include="UpdateCompetitor.Designer.cs">
       <DependentUpon>UpdateCompetitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateExpert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateExpert.Designer.cs">
+      <DependentUpon>UpdateExpert.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <DependentUpon>Session4Model.tt</DependentUpon>
@@ -145,11 +157,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TrackCompetitors.resx">
+      <DependentUpon>TrackCompetitors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TrackOverall.resx">
       <DependentUpon>TrackOverall.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateCompetitor.resx">
       <DependentUpon>UpdateCompetitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateExpert.resx">
+      <DependentUpon>UpdateExpert.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
