@@ -61,6 +61,7 @@ namespace TPQR_Session4_8_9
         {
             using (var context = new Session4Entities())
             {
+                cbTrainingModule.Items.Clear();
                 var getSkillID = (from x in context.Skills
                                   where x.skillName == cbSkill.SelectedItem.ToString()
                                   select x.skillId).FirstOrDefault();
