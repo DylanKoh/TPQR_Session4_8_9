@@ -16,7 +16,7 @@ namespace TPQR_Session4_8_9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminMainMenu());
+            Application.Run(new UpdateCompetitor());
         }
     }
 }

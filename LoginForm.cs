@@ -101,7 +101,9 @@ namespace TPQR_Session4_8_9
                         }
                         else
                         {
-
+                            Hide();
+                            (new UpdateCompetitor()).ShowDialog();
+                            Close();
                         }
                     }
                 }
