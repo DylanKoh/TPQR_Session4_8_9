@@ -46,6 +46,8 @@ namespace TPQR_Session4_8_9
 
         private void cbSkill_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbCat.Items.Clear();
+            cbTrainingModule.Items.Clear();
             using (var context = new Session4Entities())
             {
                 var getCat = (from x in context.User_Type

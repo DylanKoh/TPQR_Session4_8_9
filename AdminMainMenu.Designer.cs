@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnBack = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAssign = new System.Windows.Forms.Button();
             this.btnTrackOverall = new System.Windows.Forms.Button();
@@ -49,6 +49,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(976, 93);
             this.panel1.TabIndex = 1;
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(12, 17);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(100, 58);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // label1
             // 
@@ -71,16 +81,6 @@
             this.panel2.Size = new System.Drawing.Size(976, 64);
             this.panel2.TabIndex = 10;
             // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(12, 17);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(100, 58);
-            this.btnBack.TabIndex = 1;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -99,6 +99,7 @@
             this.btnAssign.TabIndex = 13;
             this.btnAssign.Text = "Assign Training";
             this.btnAssign.UseVisualStyleBackColor = true;
+            this.btnAssign.Click += new System.EventHandler(this.btnAssign_Click);
             // 
             // btnTrackOverall
             // 
@@ -108,6 +109,7 @@
             this.btnTrackOverall.TabIndex = 14;
             this.btnTrackOverall.Text = "Track Overall Training Progress";
             this.btnTrackOverall.UseVisualStyleBackColor = true;
+            this.btnTrackOverall.Click += new System.EventHandler(this.btnTrackOverall_Click);
             // 
             // AdminMainMenu
             // 
@@ -121,7 +123,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "AdminMainMenu";
             this.Text = "Admin Main Menu";
             this.panel1.ResumeLayout(false);

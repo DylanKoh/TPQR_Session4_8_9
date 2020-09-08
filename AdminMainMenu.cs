@@ -23,5 +23,19 @@ namespace TPQR_Session4_8_9
             (new LoginForm()).ShowDialog();
             Close();
         }
+
+        private void btnTrackOverall_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new TrackOverall()).ShowDialog();
+            Close();
+        }
+
+        private void btnAssign_Click(object sender, EventArgs e)
+        {
+            Hide();
+            (new AssignTraining()).ShowDialog();
+            Close();
+        }
     }
 }
